@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/kali/bhptrojan/github_trojan.py", line 88, in <module>
+    trojan = Trojan('abc')
+  File "/home/kali/bhptrojan/github_trojan.py", line 31, in __init__
+    self.repo = github_connect()
+  File "/home/kali/bhptrojan/github_trojan.py", line 19, in github_connect
+    return sess.repository(user, 'bhptrojan')
+  File "/home/kali/.local/lib/python3.10/site-packages/github3/github.py", line 2062, in repository
+    json = self._json(self._get(url), 200)
+  File "/home/kali/.local/lib/python3.10/site-packages/github3/models.py", line 161, in _json
+    raise exceptions.error_for(response)
+github3.exceptions.NotFoundError: 404 Not Found
